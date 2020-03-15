@@ -4,6 +4,19 @@
 * Reads ambient temperature and humidity and sends it to ThingSpeak
 * Enables/Disables temperature control via WiFi
 
+## Secrets
+To store WiFi password and SSID, create a `Secrets.h` file in the `include` folder.
+Example:  
+```c++
+#ifndef SECRETS_H
+#define SECRETS_H
+
+const char* SSID = "YourWifiName";
+const char* PSK = "YourWifiPassword";
+
+#endif
+```
+
 ## Dependencies
 Add the following libraries.
 
